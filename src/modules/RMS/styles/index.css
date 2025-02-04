@@ -1,0 +1,293 @@
+
+/* RMS */
+
+
+.fc {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fc-toolbar {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  
+  .fc-toolbar-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .fc-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .fc-button:hover {
+    background-color: #45a049;
+  }
+  
+  .fc .fc-resource-cell {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
+    color: #333333;
+  }
+  
+  .fc .fc-group {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #e0e7ff;
+    padding: 10px;
+    border-left: 5px solid #4caf50; 
+  }
+  
+  .fc-event {
+    border-radius: 10px;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .fc-event[data-event="warning"] {
+    background-color: #f39c12;
+  }
+  
+  .fc-event[data-event="info"] {
+    background-color: #4caf50;
+  }
+  
+  .fc-event[data-event="error"] {
+    background-color: #e74c3c;
+  }
+  
+  .fc-event:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .fc-event .fc-event-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fc-event .fc-event-title::before {
+    content: "\f007"; 
+    font-family: 'FontAwesome';
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  
+  .fc .fc-axis {
+    font-weight: bold;
+    color: #555555;
+  }
+  
+  .fc-event[data-event="info"]:hover::after {
+    content: "Click for more info";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  
+  
+  .fc-timeline-header-row {
+    color: white; 
+  }
+  
+  /* Đổi màu cho các ô trong hàng tiêu đề */
+  .fc-timeline-header-row .fc-slot-label {
+    color: white; /* Màu chữ cho các nhãn */
+  }
+  
+  /* Thay đổi màu chữ khi hover */
+  .event-completed {
+    background-color: #4caf50 !important; /* Màu xanh lá cho sự kiện hoàn thành */
+    color: white !important;
+  }
+  
+  .event-pending {
+    background-color: #ff9800 !important; /* Màu cam cho sự kiện đang chờ */
+    color: white !important;
+  }
+  
+  .event-cancelled {
+    background-color: #f44336 !important; /* Màu đỏ cho sự kiện đã hủy */
+    color: white !important;
+  }
+  
+  .event-default {
+    background-color: #2196f3 !important;
+    color: white !important;
+  }
+  .fc .fc-event {
+    background-color: transparent !important; 
+    border: none !important; 
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .fc-scrollgrid {
+    border: 0 !important;
+  }
+  
+  .fc-media-screen {
+    padding: 8px !important;
+  }
+  
+  .fc-timeline-event-harness {
+    padding: 3px;
+  }
+  
+  .fc-timeline-slot {
+    position: relative;
+  }
+  
+  .fc-timeline-slot[data-time="12:00:00"] {
+    border-right: 2px solid red;
+  }
+  .custom-calendar-dropdown .ant-picker-content {
+    width: 320px; 
+  }
+  
+  .custom-calendar-dropdown .ant-picker-cell-inner {
+    width: 40px !important; 
+    height: 40px !important;
+    padding: 8px !important;
+  }
+  
+  .custom-calendar-dropdown .ant-picker-header {
+    padding: 16px; 
+  }
+  
+  .custom-calendar-dropdown .ant-picker-footer {
+    padding: 16px;
+  }
+  
+  .input-book .ant-picker-input input {
+    color: inherit !important;
+    text-align: center !important;
+  }
+  
+  .input-book.ant-picker-focused {
+    border: 0 !important;
+    box-shadow: none;
+  }
+  
+  .fc-event-main {
+    white-space: nowrap;
+    overflow: hidden !important; 
+    text-overflow: ellipsis;  
+  }
+  
+  /* Tùy chỉnh màu nền cho toàn bộ hàng khu vực */
+  
+  
+  /* Tùy chỉnh các ô fc-timeline-slot của khu vực */
+  td.fc-timeline-lane.fc-resource.area-lane{
+    background-color: rgba(116, 105, 105, 0.1) !important; /* Màu nền cho các ô slot trong hàng khu vực */
+  }
+  
+  td.fc-datagrid-cell.fc-resource.area-lane{
+    background-color: rgba(116, 105, 105, 0.1) !important; /* Màu nền cho các ô slot trong hàng khu vực */
+  }
+  
+  .tab-action-room .ant-tabs-tab.ant-tabs-tab-active {
+    background: white !important;
+  }
+  
+  .tab-action-room .ant-tabs-nav-wrap {
+    background: #c5fbe3 !important;
+    
+  }
+  
+  .tab-action-room .ant-tabs-nav-list {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  
+  tr.ant-table-expanded-row.ant-table-expanded-row-level-1 {
+    padding:  0px !important;
+  }
+  
+  .ant-table-expanded-row.ant-table-expanded-row-level-1 .ant-table-cell {
+    padding: 0 !important;
+  }
+  
+  .tbl-room .ant-table-row:hover {
+    background-color: #c5fbe3 !important;
+    cursor: pointer;
+  }
+  .tbl-room .ant-table-row:hover .ant-table-cell{
+    background-color: #c5fbe3 !important;
+    cursor: pointer;
+  }
+  
+  .expanded .ant-tabs-tab {
+    color: black !important;
+    font-weight: 500;
+  }
+  
+  .expanded .ant-tabs-tab.ant-tabs-tab-active {
+    border : none;
+    padding: 10px 16px;
+    z-index: 2;
+    
+  }
+  .table-reset .ant-table-thead tr {
+    height: 40px;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .custom-select {
+    box-shadow :none !important;
+  }
+
+  .custom-select .ant-select-selector {
+    border: none !important;
+    box-shadow: none !important;
+  }
+  /* RMS */
+
+  /* reset css */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+  /* end */
+
+  .custom-dots button {
+    background-color: transparent;
+  }
+  .custom-dots button:hover,
+  .custom-dots button:focus {
+    background-color: gray;
+  }
