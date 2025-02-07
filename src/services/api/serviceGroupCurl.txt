@@ -1,0 +1,49 @@
+# 1. Thêm nhóm dịch vụ Dọn dẹp Nhà Cửa
+curl --location 'http://localhost:3000/api/service-groups' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {{your_token}}' \
+--data '{
+    "name": "Dọn dẹp Nhà Cửa",
+    "description": "Dịch vụ dọn dẹp, vệ sinh nhà cửa chuyên nghiệp, nhanh chóng và tiện lợi.",
+    "icon": "cleaning_icon"
+}'
+
+# 2. Thêm nhóm dịch vụ Sửa chữa Điện nước
+curl --location 'http://localhost:3000/api/service-groups' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {{your_token}}' \
+--data '{
+    "name": "Sửa chữa Điện nước",
+    "description": "Cung cấp dịch vụ sửa chữa, bảo trì hệ thống điện và nước trong nhà, văn phòng.",
+    "icon": "plumbing_electricity_icon"
+}'
+
+# 3. Thêm nhóm dịch vụ Nấu ăn Gia đình
+curl --location 'http://localhost:3000/api/service-groups' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {{your_token}}' \
+--data '{
+    "name": "Nấu ăn Gia đình",
+    "description": "Dịch vụ nấu ăn tại nhà với đa dạng món ăn, phù hợp cho gia đình, sự kiện nhỏ.",
+    "icon": "cooking_icon"
+}'
+
+# 4. Thêm nhóm dịch vụ Chăm sóc Cây cảnh
+curl --location 'http://localhost:3000/api/service-groups' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {{your_token}}' \
+--data '{
+    "name": "Chăm sóc Cây cảnh",
+    "description": "Dịch vụ chăm sóc, bảo dưỡng cây cảnh tại nhà, văn phòng bởi đội ngũ chuyên nghiệp.",
+    "icon": "plant_care_icon"
+}'
+
+# 5. Thêm nhóm dịch vụ Giặt ủi
+curl --location 'http://localhost:3000/api/service-groups' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {{your_token}}' \
+--data '{
+    "name": "Giặt ủi",
+    "description": "Dịch vụ giặt ủi, giặt là chuyên nghiệp cho quần áo, rèm cửa, ga trải giường.",
+    "icon": "laundry_icon"
+}'
